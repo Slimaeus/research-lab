@@ -13,8 +13,8 @@
         <div id="primaryNav"></div>
         <div id="brandingOther">
         </div>
-        <div class="row">
-            <div id="secondaryNav" class="col-2"></div>
+        <div class="row m-5">
+            <div id="secondaryNav" class="col-2 container"></div>
             <div id="pageContent" class="col-10"></div>
         </div>
         <div id="footer" class="d-flex p-2"></div>
@@ -31,7 +31,7 @@
             $("#secondaryNav").load("research-lab/components/home/secondaryNav.html")
             $('#footer').load('research-lab/components/common/footer.html')
             // $('#brandingOther').load('images/personnelbranding.jpg')
-            $('#pageContent').load('research-lab/pages/home.html');
+            $('#pageContent').load('research-lab/components/home/page.html');
             $('#primaryNav').on('click', '.nav-link', function (event) {
                 event.preventDefault()
 
