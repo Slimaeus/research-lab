@@ -1,0 +1,320 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Schnable Lab</title>
+    <!-- for now, link an empty css file to deal with potential FOUC in IE -->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/fouc.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-nivo-slider-3.2/default.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-nivo-slider-3.2/bar.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-nivo-slider-3.2/dark.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-nivo-slider-3.2/light.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-nivo-slider-3.2/nivo-slider.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery-nivo-slider-3.2.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#slider').nivoSlider({
+                effect: 'random',
+                slices: 15,
+                boxCols: 8,
+                boxRows: 4,
+                animSpeed: 400,
+                pauseTime: 4000,
+                startSlide: 0,
+                controlNavThumbs: false,
+                pauseOnHover: true,
+                randomStart: false
+            });
+        });
+    </script>
+
+    <!--
+<script type="text/javascript" src="js/prototype-1.6.0.2.js"></script>
+<script src="/js/swfobject.js" type="text/javascript" language="javascript"></script>
+<script src="/js/pageCurlAnimation.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	var imgUrl = '/images/employmentAd.jpg';
+	var url = 'http://schnablelab.plantgenomics.iastate.edu/employment.php';
+	var flashvars = {};
+	var params = {wmode: "transparent"};
+	var attributes = {id: "pageCurl", styleclass: "pageCurl"};
+
+	swfobject.embedSWF("/pageCurlAnimation/pageCurlAnimation.swf", "pageCurl", "534", "500", "9.0.0", false, false, params, attributes);
+	
+	function popZIndex() {
+		$('pageCurl').setStyle(
+			{
+				zIndex: '0'
+			}
+		);
+	}
+	
+	function pushZIndex(){
+		$('pageCurl').setStyle(
+			{
+				zIndex: '10'
+			}
+		);
+	}
+</script>
+-->
+    <style type="text/css">
+        <!--
+        @import url("/css/common.css");
+
+        #pageCurl {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        -->
+    </style>
+
+</head>
+<!-- <body id="Home" onload="loadMovie();" onunload="loadMovie();"> -->
+
+<body id="Home">
+    <!-- <div id="pageCurl">
+</div>
+-->
+    <div id="sizer">
+        <div id="expander">
+            <div id="wrapper">
+                <div id="o1">
+                    <div id="o2">
+                        <div id="o3">
+                            <div id="o4">
+                                <div id="mainContainer" class="clearfix">
+                                    <link rel="stylesheet" type="text/css" media="all" href="/css/notice.css" />
+                                    <!--
+<div id="notice">
+	We are experiencing technical difficulties at this moment. Some pages and contents may not load correctly. We apologize for any inconveniences.
+</div>
+-->
+                                    <div id="brandingLogo">
+                                        <a href="/"><img src="/images/front/logo.gif" alt="Schnable Lab" id="lablogo"
+                                                width="197" height="61" /></a>
+                                        <a href="http://www.iastate.edu"><img id="isulogo" alt="Iowa State University"
+                                                src="/images/front/isu.gif" width="122" height="24" /></a>
+
+                                    </div>
+
+                                    <div id="primaryNav" class="clearfix">
+                                        <ul>
+                                            <li id="one"><a href="/">Home</a></li>
+                                            <li id="two"><a href="/research/">Research</a></li>
+                                            <li id="ten"><a href="/publications/">Publications</a></li>
+                                            <li id="three"><a href="/personnel/">Personnel</a></li>
+                                            <li id="four"><a href="/collaborators/">Collaborators</a></li>
+                                            <li id="five"><a href="/education/">Education</a></li>
+                                            <li id="six"><a href="/resources/">Resources</a></li>
+                                            <li id="seven"><a href="/media/">Media &amp; Videos</a></li>
+                                            <li id="eight"><a href="/photos.php">Photos</a></li>
+                                            <li id="nine"><a href="/contact/">Contact</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div id="brandingOther">
+                                        <div id="brandingOther2"><!-- --></div>
+                                    </div>
+                                    <div id="secondaryNav">
+                                        <ul>
+                                            <li id="news" style="display:none;">
+                                                <div class="head">What's New</div>
+                                                <dl>
+                                                    <dt>07-29-05</dt>
+
+                                                </dl>
+                                                <!--	<p class="more"><a href="/news/">More</a></p> -->
+                                            </li>
+
+                                            <!--
+		<li id="project"><div class="head">Projects</div>
+			<ul>
+		<li><a href="http://magi.plantgenomics.iastate.edu">MAGI <span style="display:block;" class="smaller">(Maize Assembled Genomic Island)</span></a></li>
+		<li><a href="http://maize-mapping.plantgenomics.iastate.edu">MaGMaP <span style="display:block;" class="smaller">(Maize Genetic Mapping)</span></a>
+			<ul>
+				<li><a href="http://maize-mapping.plantgenomics.iastate.edu/actdata.html">Mapped IDPs</a></li>
+				<li><a href="http://magi.plantgenomics.iastate.edu/cgi-bin/cmap/viewer">CMap</a></li>
+			</ul>
+			</li>
+			<li><a href="/research/genomics/htp_est/">ISU EST</a>
+					<ul>
+						<li><a href="/research/genomics/htp_est/ordering.php">Order ISU ESTs</a></li>
+						<li><a href="/research/genomics/htp_est/techdata.php">EST Libraries</a></li>
+					</ul>
+			</li>
+			<li><a href="http://maize-meristems.plantgenomics.iastate.edu">SAM <span style="display:block;" class="smaller">(Shoot Apical Meristem)</span></a></li>
+			<li><a href="http://schnablelab.plantgenomics.iastate.edu/madi/">MADI <span style="display:block;" class="smaller">(MicroArray Data Interface)</span></a></li>
+			<li><a href="http://www.plantgenomics.iastate.edu/PathBinderH/">PathBinderH</a></li>
+			</ul>
+		</li>
+-->
+
+                                            <li id="info">
+                                                <div class="head">Information</div>
+                                                <ul class="last">
+                                                    <li><a href="https://www.psi.iastate.edu" target="_blank">Plant
+                                                            Sciences Institute <span style="display:block;"
+                                                                class="smaller">(Iowa State University)</span></a></li>
+                                                    <li><a href="https://www.ag2pi.org/" target="_blank">AG2PI <span
+                                                                style="display:block;" class="smaller">(Agricultural
+                                                                Genome to Phenome Initiative)</span></a></li>
+                                                    <li><a href="https://aiira.iastate.edu/" target="_blank">AIIRA <span
+                                                                style="display:block;" class="smaller">(AI Institute for
+                                                                Resilient Agriculture)</span></a></li>
+                                                    <li><a href="https://www.genomes2fields.org/" target="_blank">G2F
+                                                            <span style="display:block;" class="smaller">(The Genomes To
+                                                                Fields Initiative)</span></a></li>
+                                                    <li><a href="https://www.plantgenomics.iastate.edu"
+                                                            target="_blank">GTF <span style="display:block;"
+                                                                class="smaller">(Genomic Technlogies
+                                                                Facility)</span></a></li>
+                                                    <!--				<li><a href="https://c2c2.iastate.edu/" target="_blank">C2C2 <span style="display:block;" class="smaller">(Center for Carbon Capturing Crops)</span></a></li> -->
+                                                    <li><a href="/media/">News &amp; Media Resources</a></li>
+                                                    <li><a href="/resources/protocols/">Protocols</a></li>
+                                                    <li><a href="/map.php">How To Find Us</a></li>
+                                                    <!--		<li><a href="/employment.php">Job Opportunities</a></li> -->
+                                                    <li><a href="/recycle.php">Recycling Policy </a></li>
+                                                    <!--				<li><a href="/twitter.php">Twitter Feeds</a></li> -->
+                                                    <li class="last"><a href="/intranet/">Lab Intranet</a>
+                                                        <!-- <li class="last"><a href="/">Site Map</a></li> -->
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="content">
+                                        <div style="min-width: 880px;">
+                                            <div style="margin-right: 20px; float: right;">
+                                                <a class="twitter-timeline" width="300" height="500"
+                                                    href="https://twitter.com/schnablep"
+                                                    data-widget-id="344934565091082242" data-link-color="#50711A"
+                                                    data-chrome="nofooter" data-tweet-limit="3">Tweets by @schnablep</a>
+                                                <script>
+                                                    !function (d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                                        if (!d.getElementById(id)) {
+                                                            js = d.createElement(s);
+                                                            js.id = id;
+                                                            js.src = p + "://platform.twitter.com/widgets.js";
+                                                            fjs.parentNode.insertBefore(js, fjs);
+                                                        }
+                                                    }
+                                                        (document, "script", "twitter-wjs");
+                                                </script>
+                                            </div>
+
+                                            <!--
+		<div class="slider-wrapper theme-light">
+			<div id="slider" class="nivoSlider">
+				<img src="/images/front/cclmorn_475w.jpg" title="#ccl_caption" />
+				<img src="/images/front/cclgh.jpg" title="#cclgh_caption" />
+				<a href="http://www.youtube.com/watch?v=CZ2Qn86YBQI" target="_blank"><img src="/images/videos/video_pat.jpg" title="#pat_caption" /></a>
+				<a href="http://www.youtube.com/watch?v=lXycC5hIhtQ" target="_blank"><img src="/images/videos/video_alina.jpg" title="#alina_caption" /></a>
+				<a href="http://www.youtube.com/watch?v=jGCPwsFMk1k" target="_blank"><img src="/images/videos/video_xiao.jpg" title="#xiao_caption" /></a>
+				<a href="http://www.youtube.com/watch?v=7ayQSQfxvis" target="_blank"><img src="/images/videos/video_lisa.jpg" title="#lisa_caption" /></a>
+			</div>
+
+			<div id="ccl_caption" class="nivo-html-caption">
+				Roy J. Carver Co-Laboratory
+			</div>
+
+			<div id="cclgh_caption" class="nivo-html-caption">
+				Roy J. Carver Co-Laboratory Green House (Photo by Bob Elbert)
+			</div>
+
+			<div id="pat_caption" class="nivo-html-caption">
+				Iowa State University Announces New Iowa Corn Promotion Board Endowed Chair in Genetics. 
+				<a href="http://www.youtube.com/watch?v=CZ2Qn86YBQI" target="_blank">Click here</a> to view video
+			</div>
+			
+			<div id="alina_caption" class="nivo-html-caption">
+				What is it like to work in a laboratory?<br>
+				<a href="http://www.youtube.com/watch?v=lXycC5hIhtQ" target="_blank">Click here</a> to view video from Alina "The Cat Woman"
+			</div>
+			
+			<div id="xiao_caption" class="nivo-html-caption">
+				What do people in Schnable Lab do all day?<br>
+				<a href="http://www.youtube.com/watch?v=jGCPwsFMk1k" target="_blank">Click here</a> to view video from Xiao "The Music Guy"
+			</div>
+			
+			<div id="lisa_caption" class="nivo-html-caption">
+				What do people in Schnable Lab do all day?<br>
+				<a href="http://www.youtube.com/watch?v=7ayQSQfxvis" target="_blank">Click here</a> to view video from Lisa "The Yoga Guru"
+			</div>
+		</div>
+-->
+
+
+                                            <img src="images/front/cclmorn_475w.jpg" alt="Carver Co-Laboratory"
+                                                width="475" height="315">
+                                            <p class="captionFront">Roy J. Carver Co-Laboratory</p>
+
+                                            <div id="frontlinks">
+                                                <ul>
+                                                    <li>&#187; <a href="/media/">Media, Videos, Audio, Webinars, and
+                                                            Presentation Resources Page</a>
+                                                        <span id="updated">
+                                                            (Updated: Tuesday October 12, 2021)
+                                                        </span>
+                                                    </li>
+                                                    <li>&#187; <a href="/photos.php">Schnable Lab Photo Albums</a>
+                                                        <span id="updated">(Updated: Monday November 7, 2022)</span>
+                                                    </li>
+                                                    <!--			<li>&#187; <a href="/twitter.php">Twitter Feeds from Lab Members</a></li> -->
+                                                    <!--
+				<li>&#187; Congratulations to Matthew Carroll and 
+					<a href="/personnel/individual.php?email=amkusmec@iastate.edu" target="_blank">Aaron Kusmec</a> for receiving the Spring 2021 
+					<a href="/docs/excellence-awards/CRWeberAward_Spring2021.pdf">C. R. Weber Award for Excellence in Plant Breeding</a>
+				</li>
+	-->
+                                                </ul>
+                                            </div>
+
+                                            <p>If you are looking for the Schnable Lab at the University of
+                                                Nebraska-Lincoln please
+                                                <a href="http://www.schnablelab.org/" target="_blank">click here</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+                                        <!-- -->
+                                    </div>
+                                    <div id="footer">
+                                        <p>&copy;&nbsp;Copyright 2001-2023 Schnable Lab. All Rights Reserved.</p>
+                                        <!-- Global site tag (gtag.js) - Google Analytics -->
+                                        <script async
+                                            src="https://www.googletagmanager.com/gtag/js?id=UA-12243481-2"></script>
+                                        <script>
+                                            window.dataLayer = window.dataLayer || [];
+                                            function gtag() { dataLayer.push(arguments); }
+                                            gtag('js', new Date());
+
+                                            gtag('config', 'UA-12243481-2');
+                                        </script>
+
+                                    </div>
+                                </div>
+                                <!-- mainContainer -->
+                            </div>
+                            <!-- o4 -->
+                        </div>
+                        <!-- o3 -->
+                    </div>
+                    <!-- o2 -->
+                </div>
+                <!-- o1 -->
+            </div>
+            <!-- wrapper -->
+        </div>
+        <!-- expander -->
+    </div>
+    <!-- sizer -->
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<div class="list-group" id="homeSecondaryNav"></div>
+<script>
+    $(function() {
+        const data = [
+        {
+            text: "Plant Sciences Institute ",
+            path: '#'
+        },
+        {
+            text: "AG2PI ",
+            path: '#'
+        },
+        
+    ]
+    const secondaryNav = $('#homeSecondaryNav')
+    data.forEach((e) => {
+        secondaryNav.append(`<a href="${e.path}" class="list-group-item list-group-item-action">${e.text}</a>`)
+    })
+    })
+    
+</script>
